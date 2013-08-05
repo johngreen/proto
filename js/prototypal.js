@@ -37,11 +37,11 @@ Person.prototype = {
     occupation:"Unemployed",
     speak:function(){
 
-     this.makeLine();
-     this.saySpecies();
-     this.showAbilities();
-     this.sayEmployment();
-     this.makeLine();
+        this.makeLine();
+        this.saySpecies();
+        this.showAbilities();
+        this.sayEmployment();
+        this.makeLine();
 
     },
     saySpecies: function(){
@@ -71,9 +71,12 @@ person.speak();
 function Android () {
     this.species = "android";
 
-    this.abilities.breed = false;
-    this.abilities.repair = true;
-    this.abilities.employable = false;
+    this.abilities = {
+
+        breed: false,    
+        repair: true,
+        employable : false
+    }
     this.damaged = true;
 
     this.repair = function () {
@@ -110,3 +113,6 @@ Doctor.prototype = new Person();
 doctor = new Doctor();
 
 doctor.speak();
+
+
+android.speak();

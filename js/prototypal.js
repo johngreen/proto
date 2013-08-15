@@ -8,7 +8,7 @@ This license agreement ("License"), effective today, is made by and between you 
 
     Permitted Use and Restrictions. Licensee agrees that it will use the Software, and any modifications, improvements, or derivatives to the Software that the Licensee may create (collectively, "Improvements") solely for internal, non-commercial purposes and shall not distribute or transfer the Software or Improvements to any person or third parties without prior written permission from John C Green. The term "non-commercial," as used in this License, means academic or other scholarly research which (a) is not undertaken for profit, or (b) is not intended to produce works, services, or data for commercial use, or (c) is neither conducted, nor funded, by a person or an entity engaged in the commercial use, application or exploitation of works similar to the Software.
 
-    Ownership and Assignment of Copyright. The Licensee acknowledges that John C Grren hold copyright in the Software and associated documentation, and the Software and associated documentation are the property of John C Green. The Licensee agrees that any Improvements made by Licensee shall be subject to the same terms and conditions as the Software. Licensee agrees not to assert a claim of infringement in Licensee copyrights in Improvements in the event John C Green prepares substantially similar modifications or derivative works. The Licensee agrees to use his/her reasonable best efforts to protect the contents of the Software and to prevent unauthorized disclosure by its agents, officers, employees, and consultants. If the Licensee receives a request to furnish all or any portion of the Software to a third party, Licensee will not fulfill such a request but will refer the third party to millenniumtoday@gmail.com so that the third party's use of this Software will be subject to the terms and conditions of this License. Notwithstanding the above, Licensee may disclose any Improvements that do not involve disclosure of the Software.
+    Ownership and Assignment of Copyright. The Licensee acknowledges that John C Green hold copyright in the Software and associated documentation, and the Software and associated documentation are the property of John C Green. The Licensee agrees that any Improvements made by Licensee shall be subject to the same terms and conditions as the Software. Licensee agrees not to assert a claim of infringement in Licensee copyrights in Improvements in the event John C Green prepares substantially similar modifications or derivative works. The Licensee agrees to use his/her reasonable best efforts to protect the contents of the Software and to prevent unauthorized disclosure by its agents, officers, employees, and consultants. If the Licensee receives a request to furnish all or any portion of the Software to a third party, Licensee will not fulfill such a request but will refer the third party to millenniumtoday@gmail.com so that the third party's use of this Software will be subject to the terms and conditions of this License. Notwithstanding the above, Licensee may disclose any Improvements that do not involve disclosure of the Software.
 
     Copies. The Licensee may make a reasonable number of copies of the Software for the purposes of backup, maintenance of the Software or the development of derivative works based on the Software. These additional copies shall carry the copyright notice and shall be controlled by this License, and will be destroyed along with the original by the Licensee upon termination of the License.
     Acknowledgement. Licensee agrees that any publication of results obtained with the Software will acknowledge its use by an appropriate citation as specified in the documentation.
@@ -114,5 +114,16 @@ doctor = new Doctor();
 
 doctor.speak();
 
-
 android.speak();
+
+
+function Robot(){
+   
+    this.species = "robot";
+}
+
+Robot.prototype = new Android();
+
+robot = new Robot();
+
+robot.speak();
